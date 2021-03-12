@@ -74,10 +74,4 @@ public class MyStepsClean {
         this.email = email;
         this.password = password;
     }
-
-    @When("I send a request PUT to url {} with json and my new user")
-    public void iSendARequestPUTToUrlHttpTodoLyApiUserJsonWithJsonAndMyNewUser(String url, String body) {
-        response = given().auth().preemptive().basic(email, password).body(body).log().all().when().put(url);
-        response.then().log().all();
-    }
 }
