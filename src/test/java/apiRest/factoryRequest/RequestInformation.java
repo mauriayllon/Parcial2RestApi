@@ -1,4 +1,4 @@
-package api.factoryRequest;
+package apiRest.factoryRequest;
 
 public class RequestInformation {
 

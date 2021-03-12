@@ -1,11 +1,11 @@
-package api.factoryRequest;
+package apiRest.factoryRequest;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
 
-public class Put implements IRequest {
+public class Post implements IRequest {
     @Override
     public Response send(RequestInformation request) {
         Response response =  given().
@@ -14,10 +14,10 @@ public class Put implements IRequest {
                 body(request.getBody()).
                 log().
                 all().
-         when().
-                put(request.getUrl());
+                when().
+                post(request.getUrl());
 
-         response.then().log().all();
-         return response;
+        response.then().log().all();
+        return response;
     }
 }

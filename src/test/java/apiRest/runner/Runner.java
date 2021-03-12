@@ -1,4 +1,4 @@
-package api.runner;
+package apiRest.runner;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;

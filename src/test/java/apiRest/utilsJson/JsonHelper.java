@@ -1,4 +1,4 @@
-package api.utilsJson;
+package apiRest.utilsJson;
 
 import org.json.JSONObject;
 

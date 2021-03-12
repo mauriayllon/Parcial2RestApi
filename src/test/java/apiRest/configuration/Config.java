@@ -1,4 +1,4 @@
-package api.configuration;
+package apiRest.configuration;
 
 public class Config {
     public static final String AUTH_BASIC="Authorization";
